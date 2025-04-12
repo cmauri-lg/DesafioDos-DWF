@@ -14,8 +14,9 @@ public class Alumno {
     @Column(nullable = false)
     private String apellido;
 
-    @Column(nullable = false)
-    private Long id_materia;
+    @ManyToOne(fetch = FetchType.LAZY) //Relacion de uno a muchos
+    @JoinColumn(name = "id_materia") //Definimos el nombre de Clave foránea
+    private Materia materia;
 
     public Long getId() {
         return id;
@@ -41,11 +42,11 @@ public class Alumno {
         this.apellido = apellido;
     }
 
-    public Long getId_materia() {
-        return id_materia;
+    public Materia getMateria() {
+        return materia;
     }
 
-    public void setId_materia(Long id_materia) {
-        this.id_materia = id_materia;
+    public void setMateria(Materia materia) {
+        this.materia = materia;
     }
 }
