@@ -13,7 +13,7 @@ import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.NO_CONTENT;
 
 @RestController
-@RequestMapping(path = "/materia")
+@RequestMapping(path = "/api/materias")
 public class MateriaController {
 
     private final MateriaService materiaService;

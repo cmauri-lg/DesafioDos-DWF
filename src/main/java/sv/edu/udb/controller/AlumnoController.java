@@ -12,7 +12,7 @@ import static org.springframework.http.HttpStatus.CREATED;
 import static org.springframework.http.HttpStatus.NO_CONTENT;
 
 @RestController
-@RequestMapping(path = "/alumno")
+@RequestMapping(path = "/api/alumnos")
 public class AlumnoController {
 
     public final AlumnoService alumnoService;

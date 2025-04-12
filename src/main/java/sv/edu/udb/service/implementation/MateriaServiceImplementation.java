@@ -10,7 +10,7 @@ import sv.edu.udb.service.MateriaService;
 import sv.edu.udb.service.mapper.MateriaMapper;
 
 import java.util.List;
-
+@Service
 public class MateriaServiceImplementation implements MateriaService{
 
     private final MateriaRepository materiaRepository;

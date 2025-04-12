@@ -10,18 +10,18 @@ import sv.edu.udb.controller.response.MateriaResponse;
 
 import java.util.List;
 
-@Mapper(uses = {MateriaMapper.class})
+@Mapper(componentModel = "spring", uses = {MateriaMapper.class})
 public interface AlumnoMapper {
 
     // De Entidad Alumno a AlumnoResponse
     @Mapping(source = "materia", target = "materia")
-    AlumnoResponse toAlumnoResponse(final Alumno data);
+    AlumnoResponse toAlumnoResponse(final Alumno alumno);
 
 
     List<AlumnoResponse> toAlumnoResponseList(final List<Alumno> alumnoList);
 
     // De AlumnoRequest a Entidad Alumno
-    @Mapping(source = "id_materia", target = "materia.id")
+    @Mapping(source = "idMateria", target = "materia.id")
     Alumno toAlumno(final AlumnoRequest alumnoRequest);
 
 }

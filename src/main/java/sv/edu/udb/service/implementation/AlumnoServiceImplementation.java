@@ -1,6 +1,7 @@
 package sv.edu.udb.service.implementation;
 
 import jakarta.persistence.EntityNotFoundException;
+import org.springframework.stereotype.Service;
 import sv.edu.udb.controller.request.AlumnoRequest;
 import sv.edu.udb.controller.request.MateriaRequest;
 import sv.edu.udb.controller.response.AlumnoResponse;
@@ -12,7 +13,7 @@ import sv.edu.udb.service.AlumnoService;
 import sv.edu.udb.service.mapper.AlumnoMapper;
 
 import java.util.List;
-
+@Service
 public class AlumnoServiceImplementation implements AlumnoService {
 
     private final AlumnoRepository alumnoRepository;
