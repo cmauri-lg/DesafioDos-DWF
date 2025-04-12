@@ -10,7 +10,7 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface MateriaMapper {
 
-    MateriaResponse toMateriaResponse(final Materia materia);
+    MateriaResponse toMateriaResponse(final Materia data);
 
     List<MateriaResponse> toMateriaResponseList(final List<Materia> materiaList);
 

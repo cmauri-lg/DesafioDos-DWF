@@ -15,7 +15,7 @@ public interface AlumnoMapper {
 
     // De Entidad Alumno a AlumnoResponse
     @Mapping(source = "materia", target = "materia")
-    AlumnoResponse toAlumnoResponse(Alumno alumno);
+    AlumnoResponse toAlumnoResponse(final Alumno data);
 
 
     List<AlumnoResponse> toAlumnoResponseList(final List<Alumno> alumnoList);
