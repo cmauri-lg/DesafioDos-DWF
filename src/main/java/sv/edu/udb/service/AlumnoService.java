@@ -1,10 +1,12 @@
 package sv.edu.udb.service;
 
+import org.springframework.stereotype.Service;
 import sv.edu.udb.controller.request.AlumnoRequest;
 import sv.edu.udb.controller.response.AlumnoResponse;
 
 import java.util.List;
 
+@Service
 public interface AlumnoService {
 
     List<AlumnoResponse> findAll();
